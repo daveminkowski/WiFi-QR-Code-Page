@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <title>Dave's Wifi QR Code</title>
+    <meta name="viewport" content="width=device-width">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <script src="qrcode.js"></script>
+</head>
+
+<body>
+	<header>
+			<h1>Connect to Packernet WIFI</h1>
+    </header>
+    <main>
+       <!-- 
+		using
+		https://davidshimjs.github.io/qrcodejs/
+		js qr code generator.
+		-->
+        <div id="myQRcode"></div>
+    </main>
+	 <script>
+        let qrcode = new QRCode("myQRcode", {
+            text: "WIFI:S:ENTERSSIDHERE;T:WPA;P:ENTERPASSWORDHERE;;",
+            width: 177,
+            height: 177,
+            colorDark : "#000000",
+            colorLight : "#ffffff",
+            correctLevel : QRCode.CorrectLevel.H
+        });
+	</script>
+	
+</body>
+</html>

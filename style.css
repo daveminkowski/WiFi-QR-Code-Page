@@ -1,0 +1,26 @@
+
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+    font-size: 30px;
+}
+
+
+#myQRcode {
+	padding: 40px;
+	width: 100%;
+	display: block;
+	margin: auto;
+}
+
+#myQRcode img {
+	width: 25%;
+	display: block;
+	margin: auto;
+}
+header {
+	margin: 0 auto;
+	text-align: center;
+	color: #6C6C6C;
+	width: 100%;
+}
+
